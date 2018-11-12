@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>Java程序员面试宝典</title>
+      <link href="/2018/11/01/java-programmer-interview-guide/"/>
+      <url>/2018/11/01/java-programmer-interview-guide/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Java程序员面试宝典"><a href="#Java程序员面试宝典" class="headerlink" title="Java程序员面试宝典"></a>Java程序员面试宝典</h1><hr><h2 id="Java基础知识"><a href="#Java基础知识" class="headerlink" title="Java基础知识"></a>Java基础知识</h2><hr><h3 id="基本程序设计结构"><a href="#基本程序设计结构" class="headerlink" title="基本程序设计结构"></a>基本程序设计结构</h3><hr><h3 id="对象与类"><a href="#对象与类" class="headerlink" title="对象与类"></a>对象与类</h3><hr><h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><hr><h3 id="接口、lambda表达式与内部类"><a href="#接口、lambda表达式与内部类" class="headerlink" title="接口、lambda表达式与内部类"></a>接口、lambda表达式与内部类</h3><hr><h3 id="异常、断言和日志"><a href="#异常、断言和日志" class="headerlink" title="异常、断言和日志"></a>异常、断言和日志</h3><hr><h3 id="泛型程序设计"><a href="#泛型程序设计" class="headerlink" title="泛型程序设计"></a>泛型程序设计</h3><hr><h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><hr><h3 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h3><hr><h2 id="Java高级特性"><a href="#Java高级特性" class="headerlink" title="Java高级特性"></a>Java高级特性</h2><hr><h3 id="输入与输出、流库"><a href="#输入与输出、流库" class="headerlink" title="输入与输出、流库"></a>输入与输出、流库</h3><hr><h4 id="IO与与NIO之间的区别"><a href="#IO与与NIO之间的区别" class="headerlink" title="IO与与NIO之间的区别"></a>IO与与NIO之间的区别</h4><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> Interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>GitHub Pages + Hexo 搭建博客</title>
+      <link href="/2018/10/31/github-hexo-build-blog/"/>
+      <url>/2018/10/31/github-hexo-build-blog/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1-安装Node-js"><a href="#1-安装Node-js" class="headerlink" title="1.安装Node.js"></a>1.安装Node.js</h1><p>在<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js官网</a>下载最新稳定版进行安装。</p><h1 id="2-安装Git"><a href="#2-安装Git" class="headerlink" title="2.安装Git"></a>2.安装Git</h1><p>在<a href="https://git-scm.com/download/" target="_blank" rel="noopener">Git官网</a>下载最新稳定版进行安装。</p><h1 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3.安装Hexo"></a>3.安装Hexo</h1><ul><li>安装hexo<br>点击鼠标右键，选择【<strong>Git Bash Here</strong>】，执行安装hexo的命令：<br>npm install -g hexo-cli  </li><li>初始化目录<br>我们选择一个存放博客资源的目录（此处以D:\dengsaiyun\src\hexo\为例），在该目录下，选择【<strong>Git Bash Here</strong>】，执行hexo初始化指令：<br>hexo init  </li><li>安装依赖包<br>执行安装依赖的指令（系统会根据package.json文件中dependencies的配置安装所有依赖包）：<br>npm install  </li><li>生成网页<br>执行生成网页等资源文件的指令：<br>hexo g  <code>或者 hexo generate</code>  </li><li>启动本地服务<br>执行启动本地hexo服务的指令：<br>hexo s  <code>或者 hexo server</code><br>也可以使用hexo s -p 5000 指令来启动服务（临时修改端口）<br>然后可以通过访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 查看博客效果。</li></ul><h1 id="4-Github-Pages设置"><a href="#4-Github-Pages设置" class="headerlink" title="4.Github Pages设置"></a>4.Github Pages设置</h1><p>如果还没有GitHub账号，请前往<a href="http://www.github.com/" target="_blank" rel="noopener">GitHub官网</a>进行注册，注册完成后登录进去，然后<a href="https://github.com/new" target="_blank" rel="noopener">创建仓库</a>：<br><code>注意：仓库名命名规则必须是： username.github.io  因为每个GitHub帐号只能有一个仓库来存放个人主页，而且仓库的名字必须是username.github.io，这是特殊的命名约定。你可以通过https://username.github.io 来访问你的个人主页。</code>  </p><h1 id="5-配置SSH"><a href="#5-配置SSH" class="headerlink" title="5.配置SSH"></a>5.配置SSH</h1><ul><li>配置ssh-key：<br>上传文件需要配置ssh key，不然无法上传。 首先先检查一下本地是否已经存在ssh key，鼠标右键选择【<strong>Git Bash Here</strong>】，执行指令：<br>ls -al ~/.ssh<br>如果存在，就删除对应目录下所有的文件（一般存放在C:\Users\用户名\.ssh\目录下）。  </li><li>设置git用户名和邮箱名：<br>git config –global user.name “dengsaiyun”<br>git config –global user.email “<a href="mailto:dengsaiyun@163.com" target="_blank" rel="noopener">dengsaiyun@163.com</a>“  </li><li>设置http缓存为1000M（大小可以根据需要自行更改）<br>git config –global http.postBuffer 1048576000  </li><li>设置https缓存为1000M<br>git config –global https.postBuffer 1048576000</li><li>生成ssh 密钥：<br>执行以下指令（邮箱就是你注册Github时候的邮箱）：<br>ssh-keygen -t rsa -C “<a href="mailto:dengsaiyun@163.com" target="_blank" rel="noopener">dengsaiyun@163.com</a>“<br>此时，在C:\Users\用户名\.ssh\目录下就会生成了两个文件id_rsa 和 id_rsa.pub。  </li><li>在Github上添加SSH密钥：<br>在<a href="https://github.com/settings/keys" target="_blank" rel="noopener">GitHub设置中的SSH keys设置中</a>点击【<code>add new ssh key</code>】按钮，在弹出的窗口中，title随便取个名字，key 拷贝【id_rsa.pub】文件的所有内容。</li><li>验证ssh：<br>执行以下指令：<br>ssh <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a><br>如果出现类似下面的内容，说明配置成功。 <pre><code>The authenticity of host &#39;github.com (192.168.101.253)&#39; can&#39;t be established.RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.Are you sure you want to continue connecting (yes/no)? yesWarning: Permanently added &#39;github.com,192.168.101.253&#39; (RSA) to the list of known hosts.Hi git-xuhao! You&#39;ve successfully authenticated, but GitHub does not provide shell access.Connection to github.com closed.</code></pre><code>注：设置http和https缓存大小可选，只是为了防止提交文件到github上出现因为文件过大而导致缓存不够用报错的问题，建议还是设置一下。</code></li></ul><h1 id="6-部署到GitHub"><a href="#6-部署到GitHub" class="headerlink" title="6.部署到GitHub"></a>6.部署到GitHub</h1><ul><li>修改配置文件<br>文本编辑D:\dengsaiyun\src\hexo\_config.yml，修改<code>Deployment</code>部分：  <pre><code>deploy:type: gitrepository: git@github.com:dengsaiyun/dengsaiyun.github.io.gitbranch: master</code></pre><code>注意：每一个冒号后面都必须有1个空格，而且type，repository，branch前面必须有2个空格，否则会引起错误。</code>  </li><li>安装Git包：<br>npm install hexo-deployer-git –save</li><li>部署到GitHub上：<br>hexo deploy<br><code>注意：如果出现SSL 56错误或者reset 22端口之类的错误，建议先关闭本地防火墙，然后切换到其他网络（我当时是家里电信宽带无法deploy，连接到手机热点的网络才deploy成功）。</code></li></ul><h1 id="7-重新发布"><a href="#7-重新发布" class="headerlink" title="7.重新发布"></a>7.重新发布</h1><p>如果新增/修改了内容，可以按下面几个步骤来重新发布：  </p><ul><li>删除上次deploy的临时文件夹<code>.deploy_git</code></li><li>清除缓存：<br>hexo clean</li><li>安装Git包（可选，一般不执行也可以）：<br>npm install hexo-deployer-git –save  </li><li>生成网页（即public文件夹里的资源）：<br>hexo generate  </li><li>部署到远端GitHub：<br>hexo deploy</li></ul><h1 id="8-参考资料"><a href="#8-参考资料" class="headerlink" title="8.参考资料"></a>8.参考资料</h1><ul><li><a href="https://blog.csdn.net/u011974987/article/details/51331822" target="_blank" rel="noopener">基于Hexo+GitHub Pages 搭建博客详细教程</a>  </li><li><a href="https://blog.csdn.net/weixin_42419856/article/details/81141546" target="_blank" rel="noopener">如何修改GitHub+Hexo搭建的博客的主题</a>  </li><li><a href="https://hexo.io/themes/" target="_blank" rel="noopener">Hexo官方推荐的主题</a>  </li><li><a href="https://blinkfox.github.io/" target="_blank" rel="noopener">闪烁之狐的GitHub Pages</a>  </li><li><a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md" target="_blank" rel="noopener">闪烁之狐的博主的主题工程配置说明</a>  </li></ul><h1 id="9-Hexo常用指令"><a href="#9-Hexo常用指令" class="headerlink" title="9.Hexo常用指令"></a>9.Hexo常用指令</h1><ul><li>查看帮助<br>hexo help</li><li>查看本地环境<br>hexo -v </li><li>初始化一个目录<br>hexo init</li><li>新建文章<br>hexo new “postName”</li><li>新建页面<br>hexo new page “pageName”</li><li>生成网页(可以在public目录查看整个网站的文件)<br>hexo gernerate  </li><li>本地预览（Ctrl+C关闭）<br>hexo server</li><li>部署到远端如github、heroku<br>hexo deploy 或 hexo d  </li><li>清除缓存：<br>hexo clean </li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Markdown基本语法</title>
+      <link href="/2017/12/15/markdown-basic-grammar/"/>
+      <url>/2017/12/15/markdown-basic-grammar/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h1><p>语法：#后跟1个空格后，再写标题，支持六级标题。<br>示例：</p><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h1 id="2-文本样式"><a href="#2-文本样式" class="headerlink" title="2.文本样式"></a>2.文本样式</h1><h2 id="2-1-加粗"><a href="#2-1-加粗" class="headerlink" title="2.1 加粗"></a>2.1 加粗</h2><p>语法：要加粗的文字左右分别用两个*号包起来。<br>示例：<br><strong>这是加粗的文字</strong>  </p><h2 id="2-2-斜体"><a href="#2-2-斜体" class="headerlink" title="2.2 斜体"></a>2.2 斜体</h2><p>语法：要倾斜的文字左右分别用一个<em>号包起来。<br>示例：  </em>这是倾斜的文字*  </p><h2 id="2-3-斜体加粗"><a href="#2-3-斜体加粗" class="headerlink" title="2.3 斜体加粗"></a>2.3 斜体加粗</h2><p>语法：要倾斜和加粗的文字左右分别用三个<em>号包起来。<br>示例：<br>**</em>这是斜体加粗的文字***  </p><h2 id="2-4-删除线"><a href="#2-4-删除线" class="headerlink" title="2.4 删除线"></a>2.4 删除线</h2><p>语法：要加删除线的文字左右分别用两个~号包起来<br>示例：<br><del>这是加删除线的文字</del>  </p><h2 id="2-5-引用"><a href="#2-5-引用" class="headerlink" title="2.5 引用"></a>2.5 引用</h2><p>语法：在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;n个。  </p><p>示例：  </p><blockquote><p>这是引用的内容</p><blockquote><p>这是引用的内容</p><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><p>这是引用的内容  </p></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote><h2 id="2-6-分割线"><a href="#2-6-分割线" class="headerlink" title="2.6 分割线"></a>2.6 分割线</h2><p>语法：三个或者三个以上的 - 或者 * 都可以。  </p><h2 id="示例："><a href="#示例：" class="headerlink" title="示例：  "></a>示例：  </h2><hr><hr><hr><h2 id="2-7-超链接"><a href="#2-7-超链接" class="headerlink" title="2.7 超链接"></a>2.7 超链接</h2><p>语法：<code>[超链接名](超链接地址 &quot;超链接title&quot;)</code><br><code>注：title可加可不加</code><br>示例:<br><a href="http://www.baidu.com/" target="_blank" rel="noopener">百度</a>  </p><h2 id="2-8-段落"><a href="#2-8-段落" class="headerlink" title="2.8 段落"></a>2.8 段落</h2><p>语法：段落之间空一行  </p><h2 id="2-9-换行符"><a href="#2-9-换行符" class="headerlink" title="2.9 换行符"></a>2.9 换行符</h2><p>语法：一行结束时输入两个空格  </p><h1 id="3-图片"><a href="#3-图片" class="headerlink" title="3.图片"></a>3.图片</h1><p>语法：<code>![图片alt](图片地址 &quot;图片title&quot;)</code><br>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。<br>图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加。<br>示例：<br><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2528906503,2929121488&amp;fm=11&amp;gp=0.jpg" alt="blockchain" title="区块链">  </p><h1 id="4-列表"><a href="#4-列表" class="headerlink" title="4.列表"></a>4.列表</h1><h2 id="4-1-无序列表"><a href="#4-1-无序列表" class="headerlink" title="4.1 无序列表"></a>4.1 无序列表</h2><p>语法：无序列表用 - + * 任何一种都可以。<br>示例：  </p><ul><li>列表内容</li></ul><ul><li>列表内容</li></ul><ul><li>列表内容<h2 id="4-2-有序列表"><a href="#4-2-有序列表" class="headerlink" title="4.2 有序列表"></a>4.2 有序列表</h2>语法：数字加点。<br>示例：<br>1.列表内容<br>2.列表内容<br>3.列表内容</li></ul><h1 id="5-表格"><a href="#5-表格" class="headerlink" title="5.表格"></a>5.表格</h1><p>语法：<br>空行<br><code>|表头|表头|表头|</code><br><code>|:---|:--:|---:|</code><br><code>|内容|内容|内容|</code><br><code>|内容|内容|内容|</code>     </p><pre><code>注：1）表格的语句首行上面必须为空行，不然表格不生效。2）|、-、:之间的多余空格会被忽略，不影响布局。3）默认标题栏居中对齐，内容居左对齐。4）-:表示内容和标题栏居右对齐，:-表示内容和标题栏居左对齐，:-:表示内容和标题栏居中对齐。5）内容和|之间的多余空格会被忽略，每行第一个|和最后一个|可以省略，-的数量至少有一个。  </code></pre><p>示例:  </p><table><thead><tr><th>姓名</th><th>技能</th><th>排行</th></tr></thead><tbody><tr><td>刘备</td><td>哭</td><td>大哥</td></tr><tr><td>关羽</td><td>打</td><td>二弟</td></tr><tr><td>张飞</td><td>骂</td><td>三弟</td></tr></tbody></table><h1 id="6-代码"><a href="#6-代码" class="headerlink" title="6.代码"></a>6.代码</h1><p>语法：<br>单行代码：代码之间分别用一个反引号包起来<br>示例：<br><code>create table student</code><br>代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行<br>示例：  </p><pre><code>function fun(){    alert &quot;弹弹弹，弹走鱼尾纹。&quot;;}</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Markdown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
+</search>
